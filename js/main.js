@@ -1,7 +1,6 @@
-var emails;
 var container = document.getElementById('inputEmail');
 
-emails = ['michele@boolean.careers', 'fabio@boolean.careers', 'roberto@boolean.careers'];
+var emails = ['michele@boolean.careers', 'fabio@boolean.careers', 'roberto@boolean.careers'];
 
 buttonCheck.addEventListener('click',
     function() {
@@ -19,12 +18,15 @@ buttonCheck.addEventListener('click',
 
         if (userFound == true) {
             document.getElementById('accesso').innerHTML = 'Accesso Effettuato!';
-
             container.className = 'hidden';
+            document.getElementById('accesso').className = 'greenColor';
+
 
 
         } else {
             document.getElementById('accesso').innerHTML = 'Accesso Negato!';
+            document.getElementById('accesso').className = 'redColor'
+
 
         }
 
@@ -48,14 +50,21 @@ buttonGame.addEventListener('click',
 
 
         if (giocatoreUno > giocatoreDue) {
-            document.getElementById('vincitore').innerHTML = 'Vince giocatore uno!';
+            document.getElementById('vincitore').innerHTML = 'Complimenti, HAI VINTO!';
+            document.getElementById('giocatoreUno').className = 'greenColor';
+            document.getElementById('giocatoreDue').className = 'redColor';
 
 
         } else if (giocatoreUno == giocatoreDue) {
             document.getElementById('vincitore').innerHTML = 'Pareggio!';
+            document.getElementById('giocatoreUno').className = '';
+            document.getElementById('giocatoreDue').className = '';
+
 
         } else {
-            document.getElementById('vincitore').innerHTML = 'Vince giocatore due!';
+            document.getElementById('vincitore').innerHTML = 'HAI PERSO!';
+            document.getElementById('giocatoreUno').className = 'redColor';
+            document.getElementById('giocatoreDue').className = 'greenColor';
 
         }
     }

@@ -6,6 +6,16 @@
 
 body {
     background-color: teal;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    margin-bottom: 10px;
 }
 
 .show {
@@ -17,12 +27,55 @@ body {
 }
 
 .row {
-    width: 1200px;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .box {
-    width: 50%;
+    padding: 40px;
+    margin: 20px;
     text-align: center;
+    background-color: #ccc;
+    width: 50%;
+    border-radius: 5px;
+    min-height: 240px;
+}
+
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.box span {
+    font-size: 20px;
+}
+
+#buttonGame {
+    background-color: tomato;
+}
+
+#buttonCheck {
+    background-color: yellowgreen;
+}
+
+.redColor {
+    color: red;
+}
+
+.greenColor {
+    color: green;
 }
