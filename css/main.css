@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.row {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.box {
+    width: 50%;
+    text-align: center;
+}
